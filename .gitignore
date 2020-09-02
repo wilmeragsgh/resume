@@ -1,16 +1,8 @@
 # Archieve
-Archieve/
+aux/
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
-*.lof
 *.log
-*.lot
-*.fls
+*.fdb_latexmk
 *.out
-*.toc
-*.fmt
-*.fot
-*.cb
-*.cb2
-.*.lb

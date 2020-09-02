@@ -1,0 +1,223 @@
+%-------------------------
+% Resume in Latex
+% Author : Wilmer Gonzalez
+% Based on: Sourabh Bajaj repo
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+% Page coloring, fonts, and logos
+\usepackage{pagecolor}
+\usepackage{lato}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{fontawesome}
+% ---
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% ---
+
+% Sections formatting
+\titleformat{\section}{
+	\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+% ---
+
+% Custom commands
+\newcommand{\resumeItem}[1]{%2
+\item\small{
+		%\textbf{#1}
+		#1
+		%{: #2 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{8pt}\item%-1
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+	\vspace{1pt}
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeTech}[2]{
+	\textbf{#1:} #2
+}
+
+% COLOR THEMES SELECTION
+% For Light theme un-comment this and comment the Dark theme section below
+% \colorlet{urlcolor}{blue}
+% \newcommand{\otherThemeRef}{\href{https://github.com/DiegoRenner/CV/blob/master/CV_dark.pdf}{See dark theme}}
+% \newcommand{\latestVersion}{\href{https://github.com/DiegoRenner/CV/blob/master/CV_light.pdf}{Get Latest version}}
+
+\input{\jobname.theme}
+% For Dark theme un-comment this and comment the Light theme section above
+
+%\colorlet{textcolor}{white!80!gray}
+%\colorlet{backgroundcolor}{black!30!gray}
+%\colorlet{urlcolor}{blue!25!white}
+%\AtBeginDocument{\color{textcolor}}
+%\newcommand{\otherThemeRef}{\href{https://github.com/DiegoRenner/CV/blob/master/CV_light.pdf}{See light theme}}
+%\newcommand{\latestVersion}{\href{https://github.com/DiegoRenner/CV/blob/master/CV_dark.pdf}{Get Latest version}}
+% ---
+
+% DOCUMENT MAIN
+\begin{document}
+
+
+% HEADING
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{\href{https://www.linkedin.com/in/diego-renner-6169851b5/}{\Large Diego Renner}} &  \href{https://github.com/DiegoRenner}{ \faicon{github} \color{urlcolor} DiegoRenner} \\
+	\href{mailto:drenner@student.ethz.ch}{drenner@student.ethz.ch} &  \faicon{code} C++, Python, Matlab\\
+	\textsl{\small \latestVersion} & \textsl{\small \otherThemeRef}
+\end{tabular*}
+% ---
+
+% EXPERIENCE
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{ETH Zürich}{Zurich, Switzerland}
+{Research Assistant}{September 2020 - Now}
+\resumeItemListStart
+\resumeItem{Hired for continued development of BEM code that was implemented in the Masters Thesis.}
+\resumeItemListEnd
+\resumeTech{Technologies}{C++, CMake, Github}\\
+\resumeTech{Theory}{BEM, Resonances in Transmission Scattering Problems}
+
+\resumeSubheading
+{ETH Zürich}{Zurich, Switzerland}
+{Teaching Assistant}{September 2020 - Now}
+\resumeItemListStart
+\resumeItem{Teaching Assistant for Lecture "Computational Methods for Engineering Applications".}
+\resumeItemListEnd
+\resumeTech{Technologies}{C++, \LaTeX}\\
+\resumeTech{Theory}{ODEs, PDEs and numerical algorithms to solve them}
+
+\resumeSubheading
+{CSCS Swiss National Supercomputing Center}{Lugano, Switzerland}
+{Internship}{May 2018 - August 2018}
+\resumeItemListStart
+\resumeItem{Writing regression checks for Piz Daint, Cray XC40/XC50 production system.}
+\resumeItemListEnd
+\resumeTech{Technologies}{C, MPI, MySQL, Kibana, Grafana}\\
+
+\resumeSubheading
+{Coople}{Basel/Zurich, Switzerland}
+{Logistics \& Service}{2013 - 2020}
+\resumeItemListStart
+\resumeItem{50+ employments at events and meetings.}
+\resumeItem{Favoured by 8 employers on the jobs distribution platform Coople due to reliability and efficiency.}
+\resumeItemListEnd
+%\newpage
+
+\resumeSubheading
+{Eugen Leu \& Partner AG, Photography Studio}{Riehen, Switzerland}
+{Internship}{September 2011 - October 2011}
+\resumeItemListStart
+\resumeItem{Preparing photosets and learning professional workflows.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+% ---
+
+% EDUCATION
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{ETH Zürich}{Zurich, Switzerland}
+{M.Sc. Computational Science and Engineering, Specialization Physics}{2018-2020}
+\resumeItemListStart
+\resumeItem{Degree finished, staying enrolled to take courses from Maths Masters degree.}
+\resumeItemListEnd
+\resumeSubheading
+{Universität Basel}{Basel, Switzerland}
+{B.Sc. Computational Mathematics}{2014-2018}
+\resumeItemListStart
+\resumeItem{Completed extracurricular courses on Computer Architecture, Operating Systems and Quantum Mechanics.}
+\resumeItemListEnd
+\resumeSubheading
+{Gymnasium Bäumlihof}{Basel, Switzerland}
+{Matura, Specialization Biology \& Chemistry}{2009-2014}
+\resumeSubHeadingListEnd
+% ---
+
+
+\section{Certificate}
+\resumeSubHeadingListStart
+\resumeSubheading
+{CSCS Swiss National Supercomputing Center / USI Lugano}{(remote) Lugano, Switzerland}
+{Summer School}{2020}
+\resumeItemListStart
+\resumeItem{GPU: architecture \& programming (CUDA, OpenACC)}
+\resumeItem{JupyterLab}
+\resumeItem{Python: Numpy, SciPy, Dask, Numba}
+\resumeItem{ML: Rapids}
+\resumeItem{Deep Learning: TensorFlow}
+\resumeItemListEnd
+\resumeSubheading
+{International Consulting Network (ICON)}{Shanghai, (remote) Belo Horizonte}
+{Student Consulting Network}{2017 - 2018}
+\resumeItemListStart
+\resumeItem{Market Research \& Trend Analysis}
+\resumeItem{Consulting for CREP (Real Estate, China) \& Lalubema (Private Security, Brazil)}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% ---
+\hfill \textsl{Following sections items are clickable}
+
+
+% PROJECTS
+\section{Projects \& Thesis}
+
+\resumeSubHeadingListStart
+\resumeSubItem{\href{https://github.com/ktrianta/n-body-problem}{Parallelizing the Barnes-Hut Algorithm with MPI: Parallelized implementation of N-Body solver in C++ using the MPI framework.}}
+
+\resumeSubItem{\href{https://github.com/DiegoRenner/phonons}{AiiDA Lab implementation of IR spectrum calculations for carbon based nanomaterials: An AiiDa workflow implemented in the Jupyter Notebooks based AiiDa lab interface. (Semester Thesis)}}
+
+\resumeSubItem{\href{https://github.com/DiegoRenner/HelmholtzTransmissionProblemBEM}{Near Resonances for Scattering Transmission Problems: A BEM based C++ solver for Scattering Transmission Problems, developed to investigate scatterer-dependent near resonances. (Masters Thesis)}}
+
+
+\resumeSubHeadingListEnd
+% ---
+\end{document}
