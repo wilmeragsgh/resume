@@ -3,7 +3,7 @@
 usage() {
 	echo "usage: ./generate_pdfs.sh [OPTION]"
 	echo ""
-	echo "This script generates the dark and light themed CV pdfs according to the arguments."
+	echo "This script generates the dark and light themed CV PDFs according to the arguments."
    	echo "If no arguments are passed both versions are generated."
 	echo ""
 	echo "-l, --light	Generate CV with light theme."

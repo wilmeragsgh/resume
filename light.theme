@@ -1,4 +1,4 @@
 % set light theme, read when compiled with -jobname=light
 \colorlet{urlcolor}{blue}
-\newcommand{\otherThemeRef}{\href{https://github.com/DiegoRenner/CV/blob/master/CV_dark.pdf}{See dark theme}}
-\newcommand{\latestVersion}{\href{https://github.com/DiegoRenner/CV/blob/master/CV_light.pdf}{Get Latest version}}
+\newcommand{\otherThemeRef}{\href{https://github.com/DiegoRenner/CV/blob/master/dark.pdf}{See dark theme}}
+\newcommand{\latestVersion}{\href{https://github.com/DiegoRenner/CV/blob/master/light.pdf}{Get Latest version}}
