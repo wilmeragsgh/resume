@@ -7,13 +7,13 @@ If they need to compiled for any reason anyways that can be done as follows:
 
 `clone git@github.com:DiegoRenner/CV.git`  
 `cd CV`  
-`chmod +x generate\_PDFs.sh`  
+`chmod +x generate_PDFs.sh`  
 
 Now the PDFs can be generated using the script as described here:
 
-`usage: ./generate\_pdfs.sh [OPTION]`  
+`usage: ./generate_PDFs.sh [OPTION]`  
 
-`This script generates the dark and light themed CV pdfs according to the arguments.`  
+`This script generates the dark and light themed CV PDFs according to the arguments.`  
 `If no arguments are passed both versions are generated.`  
 
 `-l, --light     Generate CV with light theme.`  
