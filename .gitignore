@@ -1,8 +1,12 @@
 # Archieve
 aux/
 
-## Core latex/pdflatex auxiliary files:
+## Core latex/pdflatex auxiliary files
 *.aux
 *.log
 *.fdb_latexmk
 *.out
+*.fls
+*.synctex.gz
+
+CV.pdf
