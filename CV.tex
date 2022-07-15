@@ -46,8 +46,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-	\vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+	\vspace{-4pt}\scshape\raggedright\large }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 % ---
 
 % Custom commands
@@ -107,7 +106,7 @@
 % HEADING
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
 	\textbf{\href{https://www.linkedin.com/in/diego-renner-6169851b5/}{\Large Diego Renner}} &  \href{https://github.com/DiegoRenner}{ \faicon{github} \color{urlcolor} DiegoRenner} \\
-	\href{mailto:drenner@student.ethz.ch}{drenner@student.ethz.ch} &  \faicon{code} C++, Python, Matlab\\
+	\href{mailto:diego.renner@sam.math.ethz.ch}{diego.renner@sam.math.ethz.ch} &  \faicon{code} C++, Python, Matlab\\
 	\textsl{\small \latestVersion} & \textsl{\small \otherThemeRef}
 \end{tabular*}
 % ---
@@ -116,22 +115,32 @@
 \section{Experience}
 \resumeSubHeadingListStart
 
+
 \resumeSubheading
 {ETH Zürich}{Zurich, Switzerland}
-{Research Assistant}{September 2020 - Now}
+{Teaching Assistant}{Sepember 2021 - February 2022}
 \resumeItemListStart
-\resumeItem{Hired for continued development of BEM code that was implemented in the Masters Thesis.}
+\resumeItem{Teaching Assistant for Lecture "Numerical Methods for Computer Science".}
+\resumeItemListEnd
+\resumeTech{Technologies}{C++}\\
+\resumeTech{Theory}{ODEs, PDEs and numerical algorithms to solve them}
+
+\resumeSubheading
+{ETH Zürich}{Zurich, Switzerland}
+{Research Assistant}{September 2020 - June 2021}
+\resumeItemListStart
+\resumeItem{Hired for continued development of BEM code that was implemented in Masters Thesis.}
 \resumeItemListEnd
 \resumeTech{Technologies}{C++, CMake, Github}\\
 \resumeTech{Theory}{BEM, Resonances in Transmission Scattering Problems}
 
 \resumeSubheading
 {ETH Zürich}{Zurich, Switzerland}
-{Teaching Assistant}{September 2020 - Now}
+{Teaching Assistant}{September 2020 - February 2021}
 \resumeItemListStart
-\resumeItem{Teaching Assistant for Lecture "Computational Methods for Engineering Applications".}
+\resumeItem{Teaching Assistant for Lecture "Numerical Methods".}
 \resumeItemListEnd
-\resumeTech{Technologies}{C++, \LaTeX}\\
+\resumeTech{Technologies}{C++, CMake}\\
 \resumeTech{Theory}{ODEs, PDEs and numerical algorithms to solve them}
 
 \resumeSubheading
@@ -141,43 +150,49 @@
 \resumeItem{Writing regression checks for Piz Daint, Cray XC40/XC50 production system.}
 \resumeItemListEnd
 \resumeTech{Technologies}{C, MPI, MySQL, Kibana, Grafana}\\
-
-\resumeSubheading
-{Coople}{Basel/Zurich, Switzerland}
-{Logistics \& Service}{2013 - 2020}
-\resumeItemListStart
-\resumeItem{50+ employments at events and meetings.}
-\resumeItem{Favoured by 8 employers on the jobs distribution platform Coople due to reliability and efficiency.}
-\resumeItemListEnd
-%\newpage
-
-\resumeSubheading
-{Eugen Leu \& Partner AG, Photography Studio}{Riehen, Switzerland}
-{Internship}{September 2011 - October 2011}
-\resumeItemListStart
-\resumeItem{Preparing photosets and learning professional workflows.}
-\resumeItemListEnd
+%
+%\resumeSubheading
+%{Coople}{Basel/Zurich, Switzerland}
+%{Logistics \& Service}{2013 - 2020}
+%\resumeItemListStart
+%\resumeItem{50+ employments at events and meetings.}
+%\resumeItem{Favoured by 8 employers on the jobs distribution platform Coople due to reliability and efficiency.}
+%\resumeItemListEnd
+%%\newpage
+%
+%\resumeSubheading
+%{Eugen Leu \& Partner AG, Photography Studio}{Riehen, Switzerland}
+%{Internship}{September 2011 - October 2011}
+%\resumeItemListStart
+%\resumeItem{Preparing photosets and learning professional workflows.}
+%\resumeItemListEnd
 \resumeSubHeadingListEnd
-% ---
-
+%% ---
+%
 % EDUCATION
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
 {ETH Zürich}{Zurich, Switzerland}
-{M.Sc. Computational Science and Engineering, Specialization Physics}{2018 - 2020}
+{M.Sc. Maths}{September 2021 - Now}
 \resumeItemListStart
-\resumeItem{Degree finished, staying enrolled to take courses from Maths Masters degree.}
+\resumeItem{Enrolled to further my knowledge on mathematical modelling and underlying theories.}
+\resumeItemListEnd
+\resumeSubheading
+{ETH Zürich}{Zurich, Switzerland}
+{M.Sc. Computational Science and Engineering, Specialization Physics}{September 2018 - August 2021}
+\resumeItemListStart
+\resumeItem{Degree completed with a thesis on solving the transmission scattering problem using BEM (C++).}
 \resumeItemListEnd
 \resumeSubheading
 {Universität Basel}{Basel, Switzerland}
-{B.Sc. Computational Mathematics}{2014 - 2018}
+{B.Sc. Computational Mathematics}{September 2014 - Februar 2018}
 \resumeItemListStart
 \resumeItem{Completed extracurricular courses on Computer Architecture, Operating Systems and Quantum Mechanics.}
 \resumeItemListEnd
 \resumeSubheading
 {Gymnasium Bäumlihof}{Basel, Switzerland}
-{Matura, Specialization Biology \& Chemistry}{2009 - 2014}
+{Matura, Specialization Biology \& Chemistry}{August 2009 - July 2014}
 \resumeSubHeadingListEnd
 % ---
 
@@ -185,8 +200,16 @@
 \section{Certificate}
 \resumeSubHeadingListStart
 \resumeSubheading
-{CSCS Swiss National Supercomputing Center / USI Lugano}{(remote) Lugano, Switzerland}
-{Summer School}{2020}
+{Ready, set, go! A short introduction for Student
+Teaching Assistants}{(remote) Zurich}
+{Education Development and Technology, ETH Zurich}{April 2020}
+\resumeItemListStart
+\resumeItem{Improving didactic skills}
+\resumeItem{Setting goals for upcoming teaching activity}
+\resumeItemListEnd
+\resumeSubheading
+{Effective High-Performance Computing \& Data Analytics with GPU}{(remote) Lugano, Switzerland}
+{Summerschool, CSCS-USI}{July 2020}
 \resumeItemListStart
 \resumeItem{GPU: architecture \& programming (CUDA, OpenACC)}
 \resumeItem{JupyterLab}
@@ -196,7 +219,7 @@
 \resumeItemListEnd
 \resumeSubheading
 {International Consulting Network (ICON)}{Shanghai, (remote) Belo Horizonte}
-{Student Consulting Network}{2017 - 2018}
+{Student Consulting Network}{March 2017 - Februar 2018}
 \resumeItemListStart
 \resumeItem{Market Research \& Trend Analysis}
 \resumeItem{Consulting for CREP (Real Estate, China) \& Lalubema (Private Security, Brazil)}
@@ -217,6 +240,7 @@
 
 \resumeSubItem{\href{https://github.com/DiegoRenner/HelmholtzTransmissionProblemBEM}{Near Resonances for Scattering Transmission Problems: A BEM based C++ solver for Scattering Transmission Problems, developed to investigate scatterer-dependent near resonances. (Masters Thesis)}}
 
+\resumeSubItem{\href{https://github.com/DiegoRenner/HelmholtzTransmissionProblemBEM}{ML based game simulation in a finance setting: Agents trained to trade or hold a stock taking into account real historical data on cash returns. Policies are learned via reinforcment learning.}}
 
 \resumeSubHeadingListEnd
 % ---
