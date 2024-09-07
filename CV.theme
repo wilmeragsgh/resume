@@ -4,5 +4,5 @@
 \colorlet{urlcolor}{blue!25!white}
 \AtBeginDocument{\color{textcolor}}
 \newcommand{\otherThemeRef}{\href{https://github.com/DiegoRenner/CV/blob/master/light.pdf}{See light theme}}
-\newcommand{\latestVersion}{\href{https://github.com/DiegoRenner/CV/blob/master/dark.pdf}{Get Latest version}}
+\newcommand{\latestVersion}{\href{https://github.com/DiegoRenner/CV/blob/master/dark.pdf}{Get latest version}}
 \pagecolor{backgroundcolor}
