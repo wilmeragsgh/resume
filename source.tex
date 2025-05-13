@@ -89,24 +89,24 @@
 % COLOR THEMES SELECTION
 
 % For Light theme un-comment this and comment the Dark theme section below
-\colorlet{textcolor}{black}
-\colorlet{urlcolor}{blue}
-\newcommand{\otherThemeRef}{\href{https://github.com/wilmeragsgh/resume/raw/master/wilmer_gonzalez_dark.pdf}{ Dark \color{urlcolor}{\faicon{lightbulb-o}}}}
-\newcommand{\latestVersion}{\href{https://github.com/wilmeragsgh/resume/raw/master/wilmer_gonzalez_light.pdf}{Latest \color{urlcolor}{\faicon{refresh}}}}
+% \colorlet{textcolor}{black}
+% \colorlet{urlcolor}{blue}
+% \newcommand{\otherThemeRef}{\href{https://github.com/wilmeragsgh/resume/raw/master/wilmer_gonzalez_dark.pdf}{ Dark \color{urlcolor}{\faicon{lightbulb-o}}}}
+% \newcommand{\latestVersion}{\href{https://github.com/wilmeragsgh/resume/raw/master/wilmer_gonzalez_light.pdf}{Latest \color{urlcolor}{\faicon{refresh}}}}
 
-\begin{document}
+% \begin{document}
 % ---
 
 % For Dark theme un-comment this and comment the Light theme section above
-% \colorlet{textcolor}{white!80!gray}
-% \colorlet{backgroundcolor}{black!30!gray}
-% \colorlet{urlcolor}{blue!25!white}
-% \AtBeginDocument{\color{textcolor}}
-% \newcommand{\otherThemeRef}{\href{https://github.com/wilmeragsgh/resume/raw/master/wilmer_gonzalez_light.pdf}{Light \color{urlcolor}{\faicon{lightbulb-o}}}}
-% \newcommand{\latestVersion}{\href{https://github.com/wilmeragsgh/resume/raw/master/wilmer_gonzalez_dark.pdf}{Latest \color{urlcolor}{\faicon{refresh}}}}
+\colorlet{textcolor}{white!80!gray}
+\colorlet{backgroundcolor}{black!30!gray}
+\colorlet{urlcolor}{blue!25!white}
+\AtBeginDocument{\color{textcolor}}
+\newcommand{\otherThemeRef}{\href{https://github.com/wilmeragsgh/resume/raw/master/wilmer_gonzalez_light.pdf}{Light \color{urlcolor}{\faicon{lightbulb-o}}}}
+\newcommand{\latestVersion}{\href{https://github.com/wilmeragsgh/resume/raw/master/wilmer_gonzalez_dark.pdf}{Latest \color{urlcolor}{\faicon{refresh}}}}
 
-% \begin{document}
-% \pagecolor{backgroundcolor}
+\begin{document}
+\pagecolor{backgroundcolor}
 % ---
 
 % HEADING
@@ -124,12 +124,35 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
+      {Serhant (through blocknerds.io)}{(remote) Caracas, VE}
+      {Senior Machine learning engineer Lead}{May 2024 - Present}
+      \resumeItemListStart
+      \resumeItem{Design and implement +5 Real state LLM use cases, reducing advisors' waiting time by at least 20\%}
+      \resumeItem{Increase team productivity by establishing MLOps practices like Prompt versioning}
+      \resumeItem{Develop Agents with tooling access to satisfy Real estate use cases}
+      \resumeItemListEnd
+      \resumeTech{Technologies}{Azure, Python, PromptLayer, LLMs, OpenAI ChatGPT, Claude, Langchain.}
+
+    \sepsection
+    
+    \resumeSubheading
+      {The Hackett Group (through \href{https://www.develative.com/}{Develative})}{(remote) Caracas, VE}
+      {AI Solutions Architect}{Nov 2024 - Feb 2025}
+      \resumeItemListStart
+      \resumeItem{Design architecture for LLM solutions related to BPMN}
+      \resumeItem{Extend platform to include new LLM components}
+      \resumeItemListEnd
+      \resumeTech{Technologies}{Azure, Python, Django, LLMs, OpenAI, Langchain.}
+
+    \sepsection
+
+    \resumeSubheading
       {Brightflow.AI}{(remote) Caracas, VE}
       {Machine learning engineer}{May 2023 - Present}
       \resumeItemListStart
-      \resumeItem{Enable usage of industry data and models to enhance financial metrics for business owners.}
-      \resumeItem{Stablish MLOps practices and components across forecasting models.}
-      \resumeItem{Develop a full-stack LLM component using financial data to generate insights.}
+      \resumeItem{Increase customer success team productivity by 10\% by enabling model performance visibility on forecasting.}
+      \resumeItem{Increase team productivity by 20\% by establishing MLOps practices like model versioning and registry workflows.}
+      \resumeItem{Develop a full-stack LLM component using financial data to generate insights for 100+ brands, increasing user engagement by 15\%.}
       \resumeItemListEnd
       \resumeTech{Technologies}{AWS, Python, Typescript, React, MLflow, LLMs, OpenAI ChatGPT, Athena.}\\
     %   \resumeTech{Theory}{Machine learning, AutoML, Feature engineering, Project management.}
@@ -140,9 +163,9 @@
       {CircleUp (Acquired by Brightflow.AI)}{(remote) Caracas, VE}
       {Machine learning engineer}{August 2021 - May 2023}
       \resumeItemListStart
-      \resumeItem{Enable ML monitoring practices across 5 use-cases in the CPG industry.}
+      \resumeItem{Establish MLOps practices across 100\% of ML use-cases of the company, reducing development time by 12\%.}
       \resumeItem{Enable semantic comparison of 1.7M brands and a hundred thousand text attributes.}
-      \resumeItem{Improve and maintain classification pipelines of millions of observations with tens of GB-scale text data.}
+      \resumeItem{Improve and maintain ML pipelines of millions of observations with tens of GB-scale text data.}
       \resumeItemListEnd
       \resumeTech{Technologies}{AWS, GCP, Python, PySpark, Airflow, Vertex, BigQuery, Dataproc, Tensorflow, BERT.}\\
     %   \resumeTech{Theory}{Machine learning, AutoML, Feature engineering, Project management.}
@@ -152,9 +175,8 @@
       {Sigma}{(remote) Caracas, VE}
       {Senior Machine learning engineer}{June - September, 2023}
       \resumeItemListStart
-      \resumeItem{Develop misleading claims detection in advertising by using Google's LLM and prompt engineering.}
+      \resumeItem{Develop a misleading claims detection system for an advertising platform by using LLMs and prompt engineering.}
       \resumeItem{Integrate third-party ML services for feature detection and moderation on advertising creatives (image and text-based).}
-      \resumeItem{Develop instruments for validation and comparison of third-party ML services.}
       \resumeItemListEnd
       \resumeTech{Technologies}{Large Language Models (LLM), Prompt Engineering, Vertex AI, Google Cloud Platform (GCP), Python, Natural Language Processing (NLP).}\\
     %   \resumeTech{Theory}{Machine learning, AutoML, Feature engineering, Project management.}
@@ -164,40 +186,45 @@
       {UNDP (UN)}{Caracas, VE}
       {Machine learning engineer}{August 2019 - August 2021}
       \resumeItemListStart
-      \resumeItem{Provide summaries from opinions and trends by processing 1.1M tweets with Topic Modeling \newline and transformer based models.}
-      \resumeItem{Detect key actors and information hubs by processing 150k user's data with Network analysis.}
-      \resumeItem{Sped up the analytical workflow by 75\% by redesigning the sampling strategy for jobs.}
+      \resumeItem{Provide summaries from opinions and trends by processing 1.1M tweets with Topic Modeling and transformer-based models, reducing analysis time by 25\%.}
+      \resumeItem{Reduce network analysis time by 83\%  by automating community and hub detection on hundreds of thousands of social media users' data.}
+      \resumeItem{Sped up the analytical workflow by 75\% by redesigning the sampling strategy of pipelines.}
       \resumeItemListEnd
       \resumeTech{Technologies}{Azure, Python, R, Bash, Gephi, Power BI, REST API, Vue, Airflow, Kubernetes, Tensorflow, BERT, NLP, Data engineering, Data visualization, Workflow orchestration, Social networks analytics.}\\
     %   \resumeTech{Theory}{Topic modeling, Community detection, Network Analysis and NLP, Data visualization, Data engineering}
 
-    \newpage
     \sepsection
 
     \resumeSubheading
       {Quash}{(remote) Caracas, VE}
-      {Machine learning engineer}{March - July, 2021}
+      {Machine learning engineer (advisor)}{March - July, 2021}
       \resumeItemListStart
       \resumeItem{Technical guide of the Data Science team.}
-      \resumeItem{Improve the adaptability of the scoring API by creating 10+ features engineering stages.}
+      \resumeItem{Decrease feature engineering time by 10\% by creating 10+ data pipelines.}
       \resumeItem{Deploy personalized ML models for credit scoring, processing 10k+ applications across 5+ countries.}
       \resumeItemListEnd
-      \resumeTech{Technologies}{Python, R, AWS, Sagemaker, REST APIs.}\\
+      \resumeSubSubheading
+      {Machine learning engineer}{February 2019 - March 2020}
+     \resumeItemListStart
+      \resumeItem{Developed a customer-facing API for using our internal credit scoring model.}
+      \resumeItem{Increased approval rate by 15\% of customers while keeping the same risk by optimizing state-of-the-art ML models.}
+      \resumeItemListEnd
+      \resumeTech{Technologies}{Python, R, AWS, Sagemaker, S3, REST APIs, Docker.}\\
       
     \sepsection
 
     \resumeSubheading
       {Universidad Central de Venezuela}{Caracas, VE}
-      {Adjunct professor (Advanced topics in AI)}{October 2018 - Present (seasonal)}
+      {Adjunct professor (Advanced topics in AI and data mining)}{October 2018 - July 2024 (seasonal)}
       \resumeItemListStart
-      \resumeItem{Designed and organized course material and resources for topics described in \href{https://bit.ly/2VYchte}{\textsl{here}}.}
-      \resumeItem{Lectured material for students and grade their assignments.}
+      \resumeItem{Designed and organized course material and resources for topics described in \href{https://github.com/ucvia}{\textsl{here}}.}
+      \resumeItem{Lecture material for tens of students and graded their assignments.}
       \resumeItem{Tutored thesis work on AI related to computer vision \newline \textsl{(Awarded with country-wise recognition for thesis work between 6 final candidates)}.}
       \resumeItemListEnd
     \resumeSubSubheading
       {Teaching assistant (Introduction to Data Science, Data Mining)}{April 2015 - February 2018}
      \resumeItemListStart
-      \resumeItem{Designed and organized practical course material and resources for topics described in \href{https://bit.ly/2VYchte}{\textsl{here}}.}
+      \resumeItem{Designed and organized practical course material and resources for topics described in \href{https://github.com/ucvia}{\textsl{here}}.}
       \resumeItem{Lectured practical material for students and grade their assignments.}
       \resumeItemListEnd
       \resumeTech{Technologies}{Python, Latex, R, Weka, Colab, Jupyter and swirl.}\\
@@ -208,8 +235,8 @@
       {Lead machine learning engineer}{Jan - Apr, 2021}
       \resumeItemListStart
       \resumeItem{Helped create a trust score for news articles by implementing a claim detection model.}
-      \resumeItem{Improved usability of the product by creating a chrome extension connected to resultant models.}
-      \resumeItem{Contributed to open-source projects related to NLP and Deep Learning models.}
+      \resumeItem{Improved usability of the product by creating a chrome extension connected to resultant models (\href{https://www.omdena.com/blog/fighting-misinformation}{blog post}).}
+      \resumeItem{Contributed to open-source projects (\href{https://github.com/utaresearch/claimbuster-spotter}{claimbuster-spotter}) related to NLP and Deep Learning models.}
       \resumeItemListEnd
       \resumeTech{Technologies}{Python, Keras, Tensorflow, Falcon, REST APIs, Javascript.}\\
     %   \resumeTech{Theory}{NLP, Deep Learning, Web development.}
@@ -227,25 +254,12 @@
     %   \resumeTech{Theory}{Data pipelines orchestration, ETL, Provisioning.}
 
     \sepsection
-
-    \resumeSubheading
-      {Quash}{(remote) Caracas, VE}
-      {Lead Machine learning engineer}{February 2019 - March 2020}
-      \resumeItemListStart
-      \resumeItem{Developed a customer-facing API for using our internal credit scoring model.}
-      \resumeItem{Increased approval rate by 15\% of customers while keeping the same risk by optimizing state-of-the-art ML models.}
-      \resumeItemListEnd
-      \resumeTech{Technologies}{Python, R, S3 and Docker.}\\
-    %   \resumeTech{Theory}{Credit scoring and Hyper-parameter optimization.}
-
-    \sepsection
-    \newpage
     
     \resumeSubheading
       {Advoqt}{(remote) Caracas, VE}
       {Machine learning engineer}{February - August, 2019}
       \resumeItemListStart
-      \resumeItem{Increased security by implementing a Deep Learning model for classifying malicious urls with high accuracy.}
+      \resumeItem{Enable malicious URL classification by developing a deep Learning model with $\approx 90\%$ accuracy.}
       \resumeItemListEnd
       \resumeTech{Technologies}{Python, Tensorflow, Elasticsearch and Spark.}\\
     %   \resumeTech{Theory}{Deep learning and Text classification.}
@@ -256,7 +270,7 @@
       {Data scientist}{June 2018 - February 2019}
       \resumeItemListStart
       \resumeItem{Decreased overload of sourcing teams by 10\% by creating an automated allocation algorithm using Linear programming and Constraint Satisfaction techniques.}
-      \resumeItem{Estimated demand of required candidates for sourcing using daily output data.}
+      \resumeItem{Deployed load estimation models for tens of candidate sourcing projects for all recruiting teams.}
       \resumeItemListEnd
       \resumeTech{Technologies}{R, Shiny, Latex, SQL and Metabase.}\\
     %   \resumeTech{Theory}{Linear programming and Constraint Satisfaction problems.}
@@ -269,7 +283,7 @@
       {Predictvia}{Caracas, VE}
       {Machine learning engineer}{February 2016 - January 2017}
      \resumeItemListStart
-     \resumeItem{Performed social network analysis, exploratory data analysis, supervised and unsupervised learning.}
+     \resumeItem{Performed social network analysis on millions of social media users and posts to detect hubs, and performed supervised and unsupervised learning.}
      \resumeItem{Built and implemented classification models, perform feature engineering, and calibrated existing models.}
      \resumeItemListEnd
      \resumeTech{Technologies}{Python, bash.}\\
@@ -402,3 +416,4 @@ and Snoring. J Med - Clin Res \& Rev. 2018; 2(6): 1-3.}}
 
 % ---
 \end{document}
+
