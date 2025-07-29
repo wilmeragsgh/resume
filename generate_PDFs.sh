@@ -17,12 +17,12 @@ then
 		case $1 in 
 			-l|--light)
 				echo "Generating CV with light theme."
-				latexmk -pdf -outdir=aux -auxdir=aux -jobname=light CV.tex > /dev/null 2>&1
+				latexmk -pdf -outdir=aux -auxdir=aux -jobname=light cv.tex > /dev/null 2>&1
 				mv aux/light.pdf .
 				;;
 			-d|--dark)
 				echo "Generating CV with dark theme."
-				latexmk -pdf -outdir=aux -auxdir=aux -jobname=dark CV.tex > /dev/null 2>&1
+				latexmk -pdf -outdir=aux -auxdir=aux -jobname=dark cv.tex > /dev/null 2>&1
 				mv aux/dark.pdf .
 				;;
 			-h|--help)
@@ -62,9 +62,9 @@ then
 #	done
 else
 			echo "Generating CV with light theme."
-			latexmk -pdf -outdir=aux -auxdir=aux -jobname=light CV.tex > /dev/null 2>&1
+			latexmk -pdf -outdir=aux -auxdir=aux -jobname=light cv.tex > /dev/null 2>&1
 			echo "Generating CV with dark theme."
-			latexmk -pdf -outdir=aux -auxdir=aux -jobname=dark CV.tex > /dev/null 2>&1
+			latexmk -pdf -outdir=aux -auxdir=aux -jobname=dark cv.tex > /dev/null 2>&1
 			mv aux/light.pdf .
 			mv aux/dark.pdf .
 fi
