@@ -18,6 +18,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{tcolorbox}
 
 % Page coloring, fonts, and logos
 \usepackage{pagecolor}
@@ -89,24 +90,40 @@
 % COLOR THEMES SELECTION
 
 % For Light theme un-comment this and comment the Dark theme section below
-% \colorlet{textcolor}{black}
-% \colorlet{urlcolor}{blue}
-% \newcommand{\otherThemeRef}{\href{https://github.com/wilmeragsgh/resume/raw/master/wilmer_gonzalez_dark.pdf}{ Dark \color{urlcolor}{\faicon{lightbulb-o}}}}
-% \newcommand{\latestVersion}{\href{https://github.com/wilmeragsgh/resume/raw/master/wilmer_gonzalez_light.pdf}{Latest \color{urlcolor}{\faicon{refresh}}}}
+\tcbset{
+  colback=gray!17!white,
+  colframe=gray!17!white
+}
+\definecolor{pageLinkTextColor}{HTML}{57a2ff}
+\definecolor{pageTextColor}{HTML}{262626}
+\colorlet{textcolor}{pageTextColor}
+\colorlet{urlcolor}{pageLinkTextColor}
+\newcommand{\otherThemeRef}{\href{https://github.com/wilmeragsgh/resume/raw/master/wilmer_gonzalez_dark.pdf}{ Dark \color{urlcolor}{\faicon{lightbulb-o}}}}
+\newcommand{\latestVersion}{\href{https://github.com/wilmeragsgh/resume/raw/master/wilmer_gonzalez_light.pdf}{Latest \color{urlcolor}{\faicon{refresh}}}}
 
-% \begin{document}
+\begin{document}
 % ---
 
 % For Dark theme un-comment this and comment the Light theme section above
-\colorlet{textcolor}{white!80!gray}
-\colorlet{backgroundcolor}{black!30!gray}
-\colorlet{urlcolor}{blue!25!white}
-\AtBeginDocument{\color{textcolor}}
-\newcommand{\otherThemeRef}{\href{https://github.com/wilmeragsgh/resume/raw/master/wilmer_gonzalez_light.pdf}{Light \color{urlcolor}{\faicon{lightbulb-o}}}}
-\newcommand{\latestVersion}{\href{https://github.com/wilmeragsgh/resume/raw/master/wilmer_gonzalez_dark.pdf}{Latest \color{urlcolor}{\faicon{refresh}}}}
+% \tcbset{
+%   colback=black!50!gray,
+%   colframe=black!50!gray,
+%   coltext=white!80!gray
+% }
+% \definecolor{pageBackgroundColor}{HTML}{171717}
+% \definecolor{pageTextColor}{HTML}{d4d4d4}%d4d4d4
+% \definecolor{pageLinkTextColor}{HTML}{57a2ff}
+% % \colorlet{textcolor}{white!80!gray}
+% \colorlet{textcolor}{pageTextColor}
+% % \colorlet{backgroundcolor}{black!30!gray}
+% \colorlet{backgroundcolor}{pageBackgroundColor}
+% \colorlet{urlcolor}{pageLinkTextColor}
+% \AtBeginDocument{\color{textcolor}}
+% \newcommand{\otherThemeRef}{\href{https://github.com/wilmeragsgh/resume/raw/master/wilmer_gonzalez_light.pdf}{Light \color{urlcolor}{\faicon{lightbulb-o}}}}
+% \newcommand{\latestVersion}{\href{https://github.com/wilmeragsgh/resume/raw/master/wilmer_gonzalez_dark.pdf}{Latest \color{urlcolor}{\faicon{refresh}}}}
 
-\begin{document}
-\pagecolor{backgroundcolor}
+% \begin{document}
+% \pagecolor{backgroundcolor}
 % ---
 
 % HEADING
@@ -132,7 +149,11 @@
       \resumeItem{Develop Agents with tooling access to satisfy Real estate use cases, using MCP.}
       \resumeItem{Integrate services and REST APIs in workflows with n8n.}
       \resumeItemListEnd
-      \resumeTech{Technologies}{Azure, Python, PromptLayer, LLMs, OpenAI ChatGPT, Claude, Langchain, MCP, n8n.}
+      \resumeTech{Company summary}{Real estate company building tools for advisors and agents through automations and AI.}
+      \begin{tcolorbox}
+        \textbf{Tech:} Python, JS, Azure, PromptLayer, LLMs, OpenAI ChatGPT, Claude, Langchain, HuggingFace, MCP, n8n, CI/CD.
+      \end{tcolorbox}
+      % \resumeTech{Company summary}{Real estate company building tools for advisors and agents through automations and AI.}
 
     \sepsection
     
@@ -143,19 +164,25 @@
       \resumeItem{Design architecture for LLM solutions related to BPMN}
       \resumeItem{Extend platform to include new LLM components}
       \resumeItemListEnd
-      \resumeTech{Technologies}{Azure, Python, Django, LLMs, OpenAI, Langchain.}
+      \resumeTech{Company summary}{ERP Company assisting ideation of customer industries' use cases through Gen AI.}
+      \begin{tcolorbox}[width=.67\linewidth]
+          \textbf{Tech:} Python, Django, Azure, LLMs, OpenAI, Langchain, Huggingface.
+      \end{tcolorbox}
 
     \sepsection
 
     \resumeSubheading
       {Brightflow.AI}{(remote) Caracas, VE}
-      {Machine learning engineer}{May 2023 - Present}
+      {Machine learning engineer}{May 2023 - May 2024}
       \resumeItemListStart
       \resumeItem{Increase customer success team productivity by 10\% by enabling model performance visibility on forecasting.}
       \resumeItem{Increase team productivity by 20\% by establishing MLOps practices like model versioning and registry workflows.}
       \resumeItem{Develop a full-stack LLM component using financial data to generate insights for 100+ brands, increasing user engagement by 15\%.}
       \resumeItemListEnd
-      \resumeTech{Technologies}{AWS, Python, Typescript, React, MLflow, LLMs, OpenAI ChatGPT, Athena.}\\
+      \resumeTech{Company summary}{CPG-focused company generating financial insights to brands using analytics and AI.}
+      \begin{tcolorbox}[width=.82\linewidth]
+          \textbf{Tech:} Python, Typescript, React, AWS, LLMs, OpenAI ChatGPT, MLflow, AWS Athena.
+      \end{tcolorbox}
     %   \resumeTech{Theory}{Machine learning, AutoML, Feature engineering, Project management.}
     \sepsection
 
@@ -168,7 +195,10 @@
       \resumeItem{Enable semantic comparison of 1.7M brands and a hundred thousand text attributes.}
       \resumeItem{Improve and maintain ML pipelines of millions of observations with tens of GB-scale text data.}
       \resumeItemListEnd
-      \resumeTech{Technologies}{AWS, GCP, Python, PySpark, Airflow, Vertex, BigQuery, Dataproc, Tensorflow, BERT.}\\
+      \resumeTech{Company summary}{CPG-focused company identifying investment opportunities using AI}
+      \begin{tcolorbox}
+          \textbf{Tech:} Python, PySpark, Airflow, AWS, GCP, Vertex, BigQuery, Dataproc, Tensorflow, Keras, Huggingface, BERT.
+      \end{tcolorbox}
     %   \resumeTech{Theory}{Machine learning, AutoML, Feature engineering, Project management.}
     \sepsection
 
@@ -179,19 +209,25 @@
       \resumeItem{Develop a misleading claims detection system for an advertising platform by using LLMs and prompt engineering.}
       \resumeItem{Integrate third-party ML services for feature detection and moderation on advertising creatives (image and text-based).}
       \resumeItemListEnd
-      \resumeTech{Technologies}{Large Language Models (LLM), Prompt Engineering, Vertex AI, Google Cloud Platform (GCP), Python, Natural Language Processing (NLP).}\\
+      \resumeTech{Company summary}{Consulting company providing development to advertising companies for moderation.}
+      \begin{tcolorbox}[width=.45\linewidth]
+          \textbf{Tech:} Python, GCP, Vertex AI, NLP, LLMs.
+      \end{tcolorbox}
     %   \resumeTech{Theory}{Machine learning, AutoML, Feature engineering, Project management.}
     \sepsection
 
     \resumeSubheading
       {UNDP (UN)}{Caracas, VE}
-      {Machine learning engineer}{August 2019 - August 2021}
+      {Machine learning engineer}{August 2019 - October 2025 (seasonal)}
       \resumeItemListStart
       \resumeItem{Provide summaries from opinions and trends by processing 1.1M tweets with Topic Modeling and transformer-based models, reducing analysis time by 25\%.}
       \resumeItem{Reduce network analysis time by 83\%  by automating community and hub detection on hundreds of thousands of social media users' data.}
       \resumeItem{Sped up the analytical workflow by 75\% by redesigning the sampling strategy of pipelines.}
       \resumeItemListEnd
-      \resumeTech{Technologies}{Azure, Python, R, Bash, Gephi, Power BI, REST API, Vue, Airflow, Kubernetes, Tensorflow, BERT, NLP, Data engineering, Data visualization, Workflow orchestration, Social networks analytics.}\\
+      \resumeTech{Organization summary}{UN's division focused on exploring and analyzing nations' development-related topics through social media}
+      \begin{tcolorbox}
+          \textbf{Tech:} Python, R, Bash, Azure, AWS, Gephi, Power BI, REST API, Vue, Airflow, Kubernetes, Tensorflow, BERT, NLP, Data engineering, Data visualization, Metabase, Workflow orchestration, Social networks analytics.
+      \end{tcolorbox}
     %   \resumeTech{Theory}{Topic modeling, Community detection, Network Analysis and NLP, Data visualization, Data engineering}
 
     \sepsection
@@ -210,7 +246,10 @@
       \resumeItem{Developed a customer-facing API for using our internal credit scoring model.}
       \resumeItem{Increased approval rate by 15\% of customers while keeping the same risk by optimizing state-of-the-art ML models.}
       \resumeItemListEnd
-      \resumeTech{Technologies}{Python, R, AWS, Sagemaker, S3, REST APIs, Docker.}\\
+      \resumeTech{Company summary}{Fintech company focused on improving underwriting models in underserved populations using AI.}
+      \begin{tcolorbox}[width=.85\linewidth]
+          \textbf{Tech:} Python, R, JS, Vue, AWS, Sagemaker, OpenAI, Vercel AI, S3, REST APIs, Docker.
+      \end{tcolorbox}
       
     \sepsection
 
@@ -228,8 +267,12 @@
       \resumeItem{Designed and organized practical course material and resources for topics described in \href{https://github.com/ucvia}{\textsl{here}}.}
       \resumeItem{Lectured practical material for students and grade their assignments.}
       \resumeItemListEnd
-      \resumeTech{Technologies}{Python, Latex, R, Weka, Colab, Jupyter and swirl.}\\
+      \resumeTech{Academic summary}{Assist in AI-related topics throughout a Computer science BSc' program.}
+      \begin{tcolorbox}[width=.55\linewidth]
+       \textbf{Tech:} Python, Latex, R, Weka, Colab, Jupyter and swirl.
+      \end{tcolorbox}
     %   \resumeTech{Theory}{Artificial intelligence, Data science and Data mining.}
+\sepsection
 
     \resumeSubheading
       {Omdena}{(remote) Caracas, VE}
@@ -239,7 +282,10 @@
       \resumeItem{Improved usability of the product by creating a chrome extension connected to resultant models (\href{https://www.omdena.com/blog/fighting-misinformation}{blog post}).}
       \resumeItem{Contributed to open-source projects (\href{https://github.com/utaresearch/claimbuster-spotter}{claimbuster-spotter}) related to NLP and Deep Learning models.}
       \resumeItemListEnd
-      \resumeTech{Technologies}{Python, Keras, Tensorflow, Falcon, REST APIs, Javascript.}\\
+      \resumeTech{Project summary}{Create an MVP for a disinformation platform focused on news articles through NLP.}
+      \begin{tcolorbox}[width=.73\linewidth]
+          \textbf{Tech:} Python, JS, Keras, Tensorflow, Falcon, REST APIs, Chrome extension.
+      \end{tcolorbox}
     %   \resumeTech{Theory}{NLP, Deep Learning, Web development.}
 
 \sepsection
@@ -251,7 +297,10 @@
       \resumeItem{Created DAGs for 30+ stored procedures from SQL Server scripts.}
       \resumeItem{Created DAGs for importing tabular data (1M+ records) to SQL Server.}
       \resumeItemListEnd
-      \resumeTech{Technologies}{Python, Airflow, SQL Server, Jenkins, Rancher, Docker, Kubernetes.}\\
+      \resumeTech{Project summary}{Assist the migration of procedures and pipelines across databases.}
+      \begin{tcolorbox}[width=.7\linewidth]
+          \textbf{Tech:} Python, Airflow, SQL Server, Jenkins, Rancher, Docker, Kubernetes.
+      \end{tcolorbox}
     %   \resumeTech{Theory}{Data pipelines orchestration, ETL, Provisioning.}
 
     \sepsection
@@ -262,7 +311,10 @@
       \resumeItemListStart
       \resumeItem{Enable malicious URL classification by developing a deep Learning model with $\approx 90\%$ accuracy.}
       \resumeItemListEnd
-      \resumeTech{Technologies}{Python, Tensorflow, Elasticsearch and Spark.}\\
+      \resumeTech{Company summary}{Cyber-security firm building tools with AI.}
+      \begin{tcolorbox}[width=.5\linewidth]
+          \textbf{Tech:} Python, Tensorflow, Elasticsearch and Spark.
+      \end{tcolorbox}
     %   \resumeTech{Theory}{Deep learning and Text classification.}
 
     \sepsection
@@ -273,7 +325,10 @@
       \resumeItem{Decreased overload of sourcing teams by 10\% by creating an automated allocation algorithm using Linear programming and Constraint Satisfaction techniques.}
       \resumeItem{Deployed load estimation models for tens of candidate sourcing projects for all recruiting teams.}
       \resumeItemListEnd
-      \resumeTech{Technologies}{R, Shiny, Latex, SQL and Metabase.}\\
+      \resumeTech{Company summary}{Recruiting firm building tools for candidate selection and hiring analytics.}
+      \begin{tcolorbox}[width=.43\linewidth]
+          \textbf{Tech:} R, Shiny, Latex, SQL and Metabase.
+      \end{tcolorbox}
     %   \resumeTech{Theory}{Linear programming and Constraint Satisfaction problems.}
 
 %\newpage
@@ -287,7 +342,10 @@
      \resumeItem{Performed social network analysis on millions of social media users and posts to detect hubs, and performed supervised and unsupervised learning.}
      \resumeItem{Built and implemented classification models, perform feature engineering, and calibrated existing models.}
      \resumeItemListEnd
-     \resumeTech{Technologies}{Python, bash.}\\
+     \resumeTech{Company summary}{Social media advertising company helping businesses target customers with AI}
+     \begin{tcolorbox}[width=.37\linewidth]
+         \textbf{Tech:} Python, R, Bash, Scikit learn.
+     \end{tcolorbox}
     %  \resumeTech{Theory}{Social network analysis, Attribution models and  Recommendation systems.}
     \resumeSubHeadingListEnd
 % ---
@@ -296,15 +354,15 @@
 \section{Technical skills}
   \resumeSubHeadingListStart
   
-  \resumeSubItem{\textbf{Programming languages:} Python, R, Bash, Julia.}
+  \resumeSubItem{\textbf{Programming languages:} Python, R, Bash, Julia, TS/JS.}
   
-  \resumeSubItem{\textbf{Cloud services:} AWS (Lambda, S3, Sagemaker), GCP (AI Platform), Azure (Blob storage).}
+  \resumeSubItem{\textbf{Cloud services:} AWS (Lambda, S3, Sagemaker), GCP ( Vertex AI, BigQuery), Azure (Functions, Blob storage, AKS).}
   
-  \resumeSubItem{\textbf{Deep learning frameworks:} Keras, Tensorflow.}
+  \resumeSubItem{\textbf{Deep learning frameworks:} Keras, Tensorflow, Pytorch, HuggingFace, sbert.}
   
   \resumeSubItem{\textbf{Others:} xgboost, scikit, pandas, falcon, flask, fastapi, Docker, Kubernetes, Jenkins, Terraform}
 
-  \resumeSubItem{\textbf{Currently learning:} Transformers models, Vue, Nodejs.}
+  \resumeSubItem{\textbf{Currently learning:} Nuxt, Nodejs.}
   
   \resumeSubHeadingListEnd
 
